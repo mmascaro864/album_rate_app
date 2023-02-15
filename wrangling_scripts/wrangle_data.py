@@ -165,6 +165,7 @@ def return_figures():
             x = album_rev_df.album,
             y = album_rev_df.average_rating.nlargest(10),
             text = album_rev_df.artist_name,
+            textposition = 'top center',
             marker = dict(line = dict(width = 2,
                                       color='white'))
             )
