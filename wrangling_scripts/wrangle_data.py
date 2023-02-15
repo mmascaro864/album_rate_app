@@ -162,9 +162,9 @@ def return_figures():
 
     graph_four.append(
         go.Bar(
-            x = album_rev_df.album,
-            y = album_rev_df.average_rating.nlargest(10),
-            text = album_rev_df.artist_name,
+            x = df.album,
+            y = df.average_rating.nlargest(10),
+            text = df.artist_name,
             textposition = 'top center',
             marker = dict(line = dict(width = 2,
                                       color='white'))
@@ -178,10 +178,9 @@ def return_figures():
                       yaxis_title = 'Rating',
                       yaxis = dict(tickmode = 'linear',
                                   tick0 = 0.0,
-                                  dtick = 0.5),
-                      autosize=False,
-                      width = 1000,
-                      height = 700)
+                                  dtick = 0.5
+                                  )
+    )
 
     # append all charts to the figures list
     figures = []
