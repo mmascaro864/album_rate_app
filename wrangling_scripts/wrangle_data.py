@@ -109,7 +109,6 @@ def return_figures():
         go.Scatter(
             y=top_ranked_albums.album,
             x=top_ranked_albums.release_date,
-            orientation='h',
             mode='markers',
             text=top_ranked_albums['artist_name'],
             marker=dict(size=12, 
