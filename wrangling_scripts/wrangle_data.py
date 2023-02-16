@@ -136,7 +136,7 @@ def return_figures():
 
     graph_three = []
 
-    # define graph_three
+    # define graph_three - artists with the most ranked albums
 
     graph_three.append(
         go.Bar(
