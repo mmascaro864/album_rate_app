@@ -2,7 +2,7 @@ import pandas as pd
 import plotly.graph_objs as go
 
 # Use this file to read in your data and prepare the plotly visualizations. The path to the data files are in
-# `data/file_name.csv`
+# `album_rate_app/data/file_name.csv`
 
 def rename_cols(df):
     '''
@@ -59,7 +59,7 @@ def return_figures():
 
     """
     # load data
-    df = cleandata('data/rym_top_5000_all_time.csv')
+    df = cleandata('album_rate_app/data/rym_top_5000_all_time.csv')
 
     # we'll look at the top 10 ranked albums as of 2021,
     # so will take a subset of the data
