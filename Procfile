@@ -1,1 +1,1 @@
-web gunicorn albumrate:app
+web gunicorn albumapp:app
